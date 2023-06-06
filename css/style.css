@@ -85,7 +85,7 @@ footer {
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
-  height: 250px;
+  height: max-content;
   padding: 1rem 0;
   width: 100%;
 }
@@ -119,8 +119,20 @@ footer {
 .cars h2 {
   color: #444;
 }
+.cars .destacks {
+  border: 2px solid rgb(209, 209, 209);
+  background-color: #706f6f;
+}
 .cars li {
+  border: 2px solid #444;
+  background-color: #ddd;
   color: #706f6f;
+  display: flex;
+  float: left;
+  height: max-content;
+  justify-content: center;
+  align-items: baseline;
+  flex-flow: column;
 }
 .cars li a {
   background-color: #444;

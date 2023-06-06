@@ -11,7 +11,7 @@
         font-size: $font-small;
         display: flex;
         justify-content: space-between;
-        height: 250px;
+        height: max-content;
         padding: 1rem 0;
         width: 100%;
     }
