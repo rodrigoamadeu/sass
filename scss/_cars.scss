@@ -1,16 +1,14 @@
+@import 'blocks';
 @mixin theme($theme: $color-01, $bg: $color-04) {
     border: 2px solid $theme;
     background-color: $bg; // pega variável acima
 }
 
 .cars {
-    h2 {
+    &__title {
         color: $color-default;
     }
-    .destacks {
-        @include theme;
-    }
-    li {
+    &__item {
         @include theme($theme: $color-default, $bg: $bg-color); // pode-se até mudar as variáveis e os estilos do theme
         color: $color-04;
         display: flex;
@@ -19,8 +17,12 @@
         justify-content: center;
         align-items: baseline;
         flex-flow: column;
+        
+        &--destack {
+            @include theme;
+        }
 
-        a {
+        &__button {
             background-color: $color-default;
         }
     }
